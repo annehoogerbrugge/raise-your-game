@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module Api
   module V1
     class PlayersController < ApplicationController
@@ -7,9 +8,9 @@ module Api
         @player = Player.new(player_params)
 
         if @player.save
-          render json: {data: @player, message: 'Player created!'}, status: :created
+          @player
         else
-          render json: {data: @player.errors, message: 'PLayer is not saved'}, status: :unprocessable_entity
+          render json: {data: @player.errors, message: 'Player is not saved'}, status: :unprocessable_entity
         end
       end
 

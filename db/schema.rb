@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_08_074154) do
   create_table "play_throughs", force: :cascade do |t|
     t.bigint "player_id"
     t.integer "score"
-    t.datetime "time_spent"
+    t.integer "time_spent"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["player_id"], name: "index_play_throughs_on_player_id"

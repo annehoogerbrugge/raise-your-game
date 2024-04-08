@@ -3,7 +3,7 @@ class CreatePlayThroughs < ActiveRecord::Migration[7.1]
     create_table :play_throughs do |t|
       t.belongs_to :player, index: true, foreign_key: true
       t.integer :score
-      t.datetime :time_spent
+      t.integer :time_spent
 
       t.timestamps
     end

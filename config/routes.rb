@@ -5,6 +5,14 @@ Rails.application.routes.draw do
       resources :players, :only => [:create, :index, :show] do
         resources :play_throughs, :only => [:create, :index, :show]
       end
+
+      resource :summaries do
+        get 'weekly_summary', on: :member
+      end
+
+      resource :impact do
+        get 'report'
+      end
     end
   end
 
