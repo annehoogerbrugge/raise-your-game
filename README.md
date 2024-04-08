@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Hi gameplayer 👋
 
-Things you may want to cover:
+Raise your game is an api only app with a postgreSQL database that can create players and play_throughts.
 
-* Ruby version
+Become the best in the impact report or weekly summary!
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
