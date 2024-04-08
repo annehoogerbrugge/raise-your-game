@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 class Player < ApplicationRecord
-    belongs_to :play_throught
+  has_many :play_throughs
 end

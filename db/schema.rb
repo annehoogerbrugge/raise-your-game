@@ -10,16 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_08_074427) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_08_074154) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "play_throughs", force: :cascade do |t|
+    t.bigint "player_id"
     t.integer "score"
     t.datetime "time_spent"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "player_id", null: false
     t.index ["player_id"], name: "index_play_throughs_on_player_id"
   end
 
