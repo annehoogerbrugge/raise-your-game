@@ -16,6 +16,8 @@ module Api
         render json: @play_through
       end
 
+      # creates a play_through belonging to the associated user
+      # the spent_time needs to be an integer number (..representing the amount of seconds)
       def create
         @play_through = @player.play_throughs.build(play_through_params)
         

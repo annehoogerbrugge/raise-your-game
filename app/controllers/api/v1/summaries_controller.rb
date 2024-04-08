@@ -5,6 +5,8 @@ module Api
     class SummariesController < ApplicationController
       include WeekDates
       
+      # the week symmary gives the total of duration and score of players for a given week
+      # the week can be added as week number, which will be used for a start and end date
       def weekly_summary
         start_date = week_start(summary_params[:week_number])
         end_date = week_end(summary_params[:week_number])
